@@ -1,16 +1,22 @@
 <template name="nav">
 
-  <nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="navbar navbar-main navbar-default navbar-fixed-top" id='navbar-top'>
 
-    <div>
       <ul class="nav navbar-nav">
-        <li id="navItem"><i class="zmdi zmdi-home zmdi-hc-2x"></i></li>
-        <li id="navItem"><i class="zmdi zmdi-home zmdi-hc-2x"></i></li>
-        <li id="navItem"><i class="zmdi zmdi-home zmdi-hc-2x"></i></li>
-        <li id="navItem"><i class="zmdi zmdi-home zmdi-hc-2x"></i></li>
+        <li id="navItem" >
+          <a href="{{pathFor 'landing'}}"><i class="zmdi zmdi-home zmdi-hc-2x"></i></a>
+        </li>
+        <li id="navItem">
+          <a href="{{pathFor 'quiz'}}"><i class="zmdi zmdi-help zmdi-hc-2x"></i></a>
+        </li>
+        <li id="navItem">
+          <a href="{{pathFor 'notes'}}"><i class="zmdi zmdi-file-text zmdi-hc-2x"></i></a>
+        </li>
+        <li id="navItem">
+          <a href="{{pathFor 'settings'}}"><i class="zmdi zmdi-settings zmdi-hc-2x"></i></a>
+        </li>
       </ul>
-    </div>
 
-  </nav>
+  </div>
 
 </template>

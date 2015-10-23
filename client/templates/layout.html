@@ -1,13 +1,13 @@
 <template name="layout">
+  <div class="layout-nav-fixed-top" id="layout-nav">
+    {{> nav}}
+  </div>
+
   <!--Main content will be rendered in the div
   //below, this will be done using the routes.js
   //with the Iron Router package -->
   <div class="main-content-wrapper" id="layout-main-content">
     {{> yield}}
   </div>
-
-  <footer class="layout-nav-fixed-bottom" id="layout-nav">
-    {{> nav}}
-  </footer>
 
 </template>
