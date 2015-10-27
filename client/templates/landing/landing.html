@@ -1,0 +1,30 @@
+<template name="landing">
+
+  <div class="container" id="feed-wrapper">
+
+    <div class="card" id="profile-overview">
+      <div id="profile-picture">
+        <img src="generic_profile.png" alt="profile" />
+      </div>
+      <div id="profile-stats">
+        <h5>Name: {{name}}</h5>
+        <h5>Classes: {{classes}}</h5>
+        <h5>Friends: {{friends}}</h5>
+      </div>
+    </div>
+
+    <div class="card" id="profile-log">
+      <div id="profile-records">
+        <canvas id="activitiesChart"></canvas>
+      </div>
+    </div>
+
+    <div class="card table-responsive"  id="activity-feed-wrapper">
+      <table class="table table-striped">
+        {{> entryList}}
+      </table>
+    </div>
+
+  </div>
+
+</template>

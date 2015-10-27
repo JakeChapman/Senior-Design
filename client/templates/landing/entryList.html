@@ -1,0 +1,13 @@
+<template name="entryList">
+  <thead class="entries">
+    <tr>
+      <th>Time</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody class="entry">
+    {{#each entries}}
+      {{> entry}}
+    {{/each}}
+  </tbody>
+</template>

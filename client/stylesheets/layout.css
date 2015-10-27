@@ -1,3 +1,17 @@
-#layout-main-content {
-  padding-top: 30px;
+html, body {
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  width:100%;
+  background-color: #aeb3ae;
 }
+
+@media only screen and (max-device-width: 480px) {
+  html, body {
+    margin: 0;
+    height: auto;
+    padding: 0;
+    width: auto;
+    background-color: #aeb3ae;
+  }
+	}

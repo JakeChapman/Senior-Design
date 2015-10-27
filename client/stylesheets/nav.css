@@ -14,3 +14,16 @@
   height: 50px;
   margin-bottom: 0;
 }
+
+@media only screen and (max-device-width: 480px) {
+
+  .navbar-main li {
+
+  }
+  #navItem a {
+  }
+  .navbar-main ul {
+
+  }
+
+}

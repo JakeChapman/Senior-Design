@@ -1,0 +1,179 @@
+.entries .entry{
+  position: relative;
+  width: 100%;
+}
+.entries .entry .entry-content{
+  position: relative;
+  width: 100%;
+  border-style: ridge;
+}
+#activity-feed-wrapper th{
+  text-align: center;
+}
+#activity-feed-wrapper table{
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
+#layout-main-content {
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+}
+.card {
+  position: relative;
+  left: 25%;
+  right: 25%;
+  width: 50%;
+  -moz-box-shadow: 0 0 5px #18191a;
+  -webkit-box-shadow: 0 0 5px #18191a;
+  box-shadow: 0 0 5px #18191a;
+  text-align: center;
+  vertical-align: middle;
+  background-color: white;
+  margin-bottom: 2%;
+}
+#feed-wrapper #profile-overview {
+  height: 22%;
+}
+#feed-wrapper #profile-log {
+  height: 28%;
+}
+#feed-wrapper #activity-feed-wrapper {
+  height: 42%;
+}
+.card div {
+  color: black;
+  z-index: 1;
+  position: relative;
+  float: left;
+}
+.card #profile-picture img {
+  border-radius: 80%;
+  height: 100%;
+  width: 100%;
+  padding: 10% 10% 10% 10%;
+}
+.card #profile-picture {
+  width: 25%;
+  height: 100%;
+}
+.card #profile-stats {
+  width: 25%;
+  height: 100%;
+  display: block;
+  float: left;
+  text-align: left;
+}
+.card #profile-records {
+  width: 100%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 2%;
+}
+.card #profile-records #activitiesChart element {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  float: left;
+  text-align: left;
+}
+#feed-wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+@media only screen and (max-device-width: 480px) {
+  .entries .entry{
+    position: relative;
+    width: 100%;
+  }
+  .entries .entry .entry-content{
+    position: relative;
+    width: 100%;
+    border-style: ridge;
+  }
+  #activity-feed-wrapper th{
+    text-align: center;
+  }
+  #activity-feed-wrapper table{
+    overflow: hidden;
+    overflow-y: hidden;
+  }
+
+  #layout-main-content {
+    width: 100%;
+    height: 100%;
+    padding-top: 20%;
+  }
+  .card {
+    position: relative;
+    width: 100%;
+    -moz-box-shadow: 0 0 5px #18191a;
+    -webkit-box-shadow: 0 0 5px #18191a;
+    box-shadow: 0 0 5px #18191a;
+    background-color: white;
+    margin-bottom: 2%;
+    float: left;
+    margin-left: 0;
+  }
+  #feed-wrapper #profile-overview {
+    height: 22%;
+  }
+  #feed-wrapper #profile-log {
+    height: 28%;
+  }
+  #feed-wrapper #activity-feed-wrapper {
+    height: 42%;
+  }
+  .card div {
+    color: black;
+    z-index: 1;
+    position: relative;
+    float: left;
+  }
+  .card #profile-picture img {
+    -moz-border-radius: 80%;
+    -webkit-border-radius: 80%;
+    border-radius: 80%;
+    height: 100%;
+    width: 100%;
+    padding: 10% 10% 10% 10%;
+  }
+  .card #profile-picture {
+    width: 25%;
+    height: 100%;
+  }
+  .card #profile-stats {
+    width: 25%;
+    height: 100%;
+    display: block;
+    float: left;
+    text-align: left;
+  }
+  .card #profile-records {
+    width: 100%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 2%;
+  }
+  .card #profile-records #activitiesChart element {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    float: left;
+    text-align: left;
+  }
+  #feed-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+  }
+}
