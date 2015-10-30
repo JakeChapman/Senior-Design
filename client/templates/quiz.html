@@ -1,3 +1,12 @@
 <template name="quiz">
-  <h2>JUST A TEST</h2>
+  <h1>Quiz Page</h1>
+  <div class="container" id="quiz-wrapper">
+    <div class="card" id="quiz-questions">
+      This is where the question(s) will go.
+      <h5>Question:
+        {{question}}</h5>
+      <input id="answer_field" type="text"/>
+      <input id="answer_button" type="button" value="Submit Answer"/>
+    </div>
+  </div>
 </template>
