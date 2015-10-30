@@ -1,17 +1,30 @@
 <template name="settings">
 
-  <h1>Settings Page</h1>
+<h1>Settings Page</h1>
 <div class = "card" id ="question-settings-overview">
   <h3>Question settings</h3>
-  <h5>Set number of questions</h5>
-  {{setQuestionAmount}}
+  <h5>Set number of questions</h5> <br />
+  Current number of questions: {{setQuestionAmount}}
+  <br />
+  Choose new amount:
+  <br />
+  <input type = "radio" name ="option1" value = "1">1 question <br />
+  <input type = "radio" name = "option2" value = "2">2 questions<br />
+  <input type = "radio" name = "option3" value = "3">3 questions<br />
+
   <h5>Set type of questions</h5>
+  <input type = "radio" name = "shortanswer_option" value = "shortanswer">Short Answer Questions<br />
+  <input type = "radio" name = "multiplechoice_option" value = "mutliple">Multiple Choice Answers <br />
+  <input type = "radio" name = "combination_option" value = "combination">Combination of Multiple Choice and Short Answer<br />
+
   <h5>Set question timer </h5>
+  <input type = "text" id = "timer_text">
 </div>
 
 <div class = "card" id = "import-settings overview">
-  <h3>Import Settings</h3>
-  <h5>Manually enter questions</h5>
-  <h5>Import/Parse text document</h5>
+  <h5>Import Questions</h5>
+  <input type = "button" id = "manual_button" value = "Manually Enter"> <br />
+  <input type = "button" id = "import_button" value = "Import/Parse"> <br />
+  <input type = "button" id = "page_scrape" value = "Page Scrape Internet"> <br />
 </div>
 </template>
