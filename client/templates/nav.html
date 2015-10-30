@@ -2,20 +2,36 @@
 
   <div class="navbar navbar-main navbar-default navbar-fixed-top" id='navbar-top'>
 
-      <ul class="nav navbar-nav">
-        <li id="navItem" >
-          <a href="{{pathFor 'landing'}}"><i class="zmdi zmdi-home zmdi-hc-2x"></i></a>
+    <ul class="nav navbar-nav">
+      <div id="navItem">
+        <li>
+          <a href="{{pathFor 'landing'}}">
+            <i class="zmdi zmdi-home zmdi-hc-2x" id="navHome"></i>
+          </a>
         </li>
-        <li id="navItem">
-          <a href="{{pathFor 'quiz'}}"><i class="zmdi zmdi-help zmdi-hc-2x"></i> </a>
+      </div>
+      <div id="navItem">
+        <li>
+          <a href="{{pathFor 'quiz'}}">
+            <i class="zmdi zmdi-help zmdi-hc-2x"></i>
+          </a>
         </li>
-        <li id="navItem">
-          <a href="{{pathFor 'notes'}}"><i class="zmdi zmdi-file-text zmdi-hc-2x"></i> </a>
+      </div>
+      <div id="navItem">
+        <li>
+          <a href="{{pathFor 'notes'}}">
+            <i class="zmdi zmdi-file-text zmdi-hc-2x"></i>
+          </a>
         </li>
-        <li id="navItem">
-          <a href="{{pathFor 'settings'}}"><i class="zmdi zmdi-settings zmdi-hc-2x"></i> </a>
+      </div>
+      <div id="navItem">
+        <li>
+          <a href="{{pathFor 'settings'}}">
+            <i class="zmdi zmdi-settings zmdi-hc-2x" id="navLink"></i>
+          </a>
         </li>
-      </ul>
+      </div>
+    </ul>
 
   </div>
 

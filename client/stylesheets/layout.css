@@ -9,9 +9,9 @@ html, body {
 @media only screen and (max-device-width: 480px) {
   html, body {
     margin: 0;
-    height: auto;
+    height: 100%;
     padding: 0;
-    width: auto;
+    width: 100%;
     background-color: #aeb3ae;
   }
 	}

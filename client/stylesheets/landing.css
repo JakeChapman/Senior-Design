@@ -11,7 +11,6 @@
   text-align: center;
 }
 #activity-feed-wrapper table{
-  overflow: hidden;
   overflow-y: hidden;
 }
 
@@ -87,7 +86,7 @@
   margin: 0 auto;
   text-align: center;
 }
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 560px) {
   .entries .entry{
     position: relative;
     width: 100%;
@@ -108,23 +107,21 @@
   }
 
   #layout-main-content {
-    padding-top: 20%;
+    padding-top: 2%;
   }
   .card {
     position: relative;
+    margin: 0 0 0 0;
     left: 0;
-    right: 0;
     width: 100%;
     -moz-box-shadow: 0 0 5px #18191a;
     -webkit-box-shadow: 0 0 5px #18191a;
     box-shadow: 0 0 5px #18191a;
     background-color: white;
     margin-bottom: 2%;
-    float: left;
-    margin-left: 0;
   }
   #feed-wrapper #profile-overview {
-    height: 22%;
+    height: %;
   }
   #feed-wrapper #profile-log {
     height: 28%;

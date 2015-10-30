@@ -75,10 +75,18 @@ function drawChart() {
   var myBarChart = new Chart(ctx).Bar(data, options);
 }
 
+Template.registerHelper("active", function(routeName) {
+  var curRoute = Router.current().route;
+  console.log(curRoute);
+  return curRoute.getName() === routeName ? 'active' : '';
+});
+
 Template.landing.rendered = function(){
     console.log("MADE IT");
     drawChart();
 };
+
+
 
 Template.landing.events({
 
