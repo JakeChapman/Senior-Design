@@ -11,8 +11,16 @@ Router.route('/', function() {
 });
 
 Router.route('/quiz',function(){
-  this.render('quiz');
-  this.layout('layout');
+  // add subscription to wait list
+  this.wait(Meteor.subscribe('questions'));
+
+  if(this.ready()){
+    this.render('quiz');
+    this.layout('layout');
+  }else {
+    this.render('Loading');
+    this.layout('layout');
+  }
 });
 
 Router.route('/notes',function(){

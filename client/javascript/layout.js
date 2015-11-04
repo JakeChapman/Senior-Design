@@ -5,3 +5,4 @@ if(Meteor.isClient){
     //$('#layout-main-content').css('background-color','black');
   });
 }
+Questions = new Mongo.Collection("Questions");
