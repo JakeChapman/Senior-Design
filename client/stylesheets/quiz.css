@@ -5,3 +5,35 @@
   }
 
 }
+.card {
+  position: relative;
+  border-radius: 10px;
+  left: 25%;
+  right: 25%;
+  width: 50%;
+  -moz-box-shadow: 0 0 5px #18191a;
+  -webkit-box-shadow: 0 0 5px #18191a;
+  box-shadow: 0 0 5px #18191a;
+  text-align: center;
+  vertical-align: middle;
+  background-color: white;
+  margin-bottom: 2%;
+}
+
+.question {
+  font-weight: bolder;
+  padding: 5px;
+}
+
+#answer-box{
+  position: relative;
+  border-radius: 10px;
+  left: 25%;
+  right: 25%;
+  width: 50%;
+  -moz-box-shadow: 0 0 5px #18191a;
+  -webkit-box-shadow: 0 0 5px #18191a;
+  box-shadow: 0 0 5px #18191a;
+  background-color: lightgray;
+  padding: 5px;
+}

@@ -1,0 +1,35 @@
+.card {
+  position: relative;
+  left: 25%;
+  right: 25%;
+  width: 50%;
+  -moz-box-shadow: 0 0 5px #18191a;
+  -webkit-box-shadow: 0 0 5px #18191a;
+  box-shadow: 0 0 5px #18191a;
+  text-align: center;
+  vertical-align: middle;
+  background-color: white;
+  margin-bottom: 2%;
+}
+
+#question-configuration {
+  text-align: left;
+}
+
+#question-source #warnings{
+  text-align: left;
+  font-weight: bold;
+  padding: 2px;
+}
+#stopStudyLockButton {
+  padding: 2px;
+  display: block;
+  margin: 2px;
+}
+
+#startStudyLockButton {
+  padding: 2px;
+  display: block;
+  margin: 2px;
+  height: 60%;
+}

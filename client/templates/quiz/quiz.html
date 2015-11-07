@@ -1,14 +1,11 @@
 <template name="quiz">
-  <h1>Quiz Page</h1>
   <div class="container" id="quiz-wrapper">
     <div class="card" id="quiz-questions">
-      This is where the question(s) will go.
-      <h5>
-        Question:
+      <h5 class="question">
         {{question}}
       </h5>
     </div>
-    <div class="card">
+    <div id="answer-box">
       {{#if isMultipleChoice}}
         {{#each answers}}
           {{> answer}}
