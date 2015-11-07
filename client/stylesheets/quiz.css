@@ -5,3 +5,17 @@
   }
 
 }
+.question {
+  font-weight: bolder;
+  padding: 5px;
+}
+
+#answer-box{
+  position: relative;
+  border-radius: 10px;
+  -moz-box-shadow: 0 0 5px #18191a;
+  -webkit-box-shadow: 0 0 5px #18191a;
+  box-shadow: 0 0 5px #18191a;
+  background-color: lightgray;
+  padding: 5px;
+}

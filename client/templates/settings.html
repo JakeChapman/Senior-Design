@@ -1,38 +1,32 @@
- <template name="settings">
+<template name="settings">
+ <div class = "container" id="configuration-container" >
 
-  <h1>Settings Page</h1>
-  <div class="card" id="question-settings-overview">
-    <h3>Question settings</h3>
-    <h5>Set number of questions</h5>
-    <br/>
-    Current number of questions:
-    {{setQuestionAmount}}
-    <br/>
-    Choose new amount:
-    <br/>
-    <input name="option1" type="radio" value="1">1 question
-    <br/>
-    <input name="option2" type="radio" value="2">2 questions<br/>
-    <input name="option3" type="radio" value="3">3 questions<br/>
+     <div class = "card" id = "question-configration">
+         <h3>Use the slider to change the question frequency: {{setQuestionAmount}}</h3>
+         <input type="range" id ="questionRange" value="5">
+         <br />
+     </div>
 
-    <h5>Set type of questions</h5>
-    <input name="shortanswer_option" type="radio" value="shortanswer">Short Answer Questions<br/>
-    <input name="multiplechoice_option" type="radio" value="mutliple">Multiple Choice Answers
-    <br/>
-    <input name="combination_option" type="radio" value="combination">Combination of Multiple Choice and Short Answer<br/>
+     <div class="card" id = "question-type-options">
+         <h3>Choose the type of questions to be asked: </h3>
+         <label class = "block"><input type="radio"  name = "questionType" id = "multiple-choice" value ="multiplechoice">Multiple Choice</label>
+         <label class = "block"><input type="radio"  name = "questionType" id = "short-answer" value ="shortanswer">Short Answer </label>
+         <label class = "block"><input type="radio"  name = "questionType" id = "combination" value = "both">Both Multiple and Short Answer </label>
+    </div>
 
-    <h5>Set question timer
-    </h5>
-    <input id="timer_text" type="text">
+    <div class="card" id = "question-source">
+        <h3>Select the source of the questions: </h3>
+        <label class = "block"><input type = "button" name= "manual" id = "manualButton" value = "Manually Enter"></label>
+        <label class = "block"><input type = "button" name = "import" id = "importButton" value = "Import/Parse File"></label>
+        <label class = "block"><input type = "button" name = "pagescrape" id = "pagescrapeButton" value = "Page Scrape Internet"></label>
+        <p id = "warnings">*If the Import/Parse option is clicked, a file must be provided in the specified format. <br />
+           **If Page Scrape Internet option is chosen a source must be selected.
+         </p>
+    </div>
+    <div class = "card">
+      <label class = "block"><input type = "button" name = "startStudyLock" id = "startStudyLockButton" value = "Start Study Lock"></label>
+      <label class = "block"><input type = "button" name = "stopStudyLock" id = "stopStudyLockButton" value = "Stop Study Lock"></label>
+    </div>
   </div>
 
-  <div class="card" id="import-settings overview">
-    <h5>Import Questions</h5>
-    <input id="manual_button" type="button" value="Manually Enter">
-    <br/>
-    <input id="import_button" type="button" value="Import/Parse">
-    <br/>
-    <input id="page_scrape" type="button" value="Page Scrape Internet">
-    <br/>
-  </div>
 </template>

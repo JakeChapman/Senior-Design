@@ -1,8 +1,9 @@
 
 Template.settings.helpers({
-  setQuestionAmount: function(){
-    return 1;
+  setQuestionAmount:  function() {
+    var x = document.getElementById("questionRange").value;
   },
+
   setQuestionType: function(){
 
   },
