@@ -1,14 +1,13 @@
 <template name="notes">
   <div class="container" id="notes-container">
 
-    <div class="notes-import" id="importBtn">
-      <div>
-          Import Notes
-      </div>
+    <div class="fileUpload btn btn-primary notes-import myFileInput" id="importBtn">
+        <span>Upload Notes</span>
+        <input id="uploadBtn" type="file" class="upload" />
     </div>
 
     <div class="notes-section">
-        text
+      <p id="file-text"></p>
     </div>
 
   </div>
