@@ -1,19 +1,20 @@
 <template name="quiz">
   <div class="container" id="quiz-wrapper">
-    <div class="card" id="quiz-questions">
-      <h5 class="question">
-        {{question}}
-      </h5>
+    <div id="quiz-question">
+      {{question}}
     </div>
     <div id="answer-box">
       {{#if isMultipleChoice}}
         {{#each answers}}
           {{> answer}}
         {{/each}}
-      {{else}}
+        {{else}}
         <input id="answer_field" type="text"/>
         <input id="answer_button" type="button" value="Submit Answer"/>
       {{/if}}
+    </div>
+    <div id="answer-btn">
+      <button type="submit" value="Submit" id="answerBtn">Submit</button>
     </div>
   </div>
 </template>
