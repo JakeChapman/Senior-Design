@@ -6,3 +6,4 @@ if(Meteor.isClient){
   });
 }
 Questions = new Mongo.Collection("Questions");
+QuestionHistory = new Mongo.Collection("QuestionHistory");
