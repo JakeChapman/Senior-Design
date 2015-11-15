@@ -4,10 +4,15 @@ if (Meteor.isServer) {
     //var database = new MongoInternals.RemoteCollectionDriver("mongodb://adminDev:sekret@candidate.54.mongolayer.com:10536/StudyLock");
 
     Questions = new Mongo.Collection("Questions");
+    QuestionHistory = new Mongo.Collection("QuestionHistory");
 
     Meteor.publish('questions', function() {
       console.log("Number of Documents on Server: " + Questions.find().count());
       return Questions.find();
+    });
+
+    Meteor.publish('history', function(){
+      return QuestionHistory.find();
     });
 });
 }

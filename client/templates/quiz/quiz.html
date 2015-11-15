@@ -1,7 +1,9 @@
 <template name="quiz">
   <div class="container" id="quiz-wrapper">
     <div id="quiz-question">
-      {{question}}
+      <div id="question">
+        {{question}}
+      </div>
     </div>
     <div id="answer-box">
       {{#if isMultipleChoice}}
@@ -13,8 +15,10 @@
         <input id="answer_button" type="button" value="Submit Answer"/>
       {{/if}}
     </div>
-    <div id="answer-btn">
-      <button type="submit" value="Submit" id="answerBtn">Submit</button>
+
+<!--    <div class="card" id="rationale">
+      {{rationale}}
     </div>
+-->
   </div>
 </template>
