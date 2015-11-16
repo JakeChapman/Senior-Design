@@ -1,8 +1,52 @@
 #question-configuration {
-  text-align: left;
+  position: relative;
+  margin: 0 0 0 0;
+  left: 0;
+  width: 100%;
+  -moz-box-shadow: 0 0 5px #18191a;
+  -webkit-box-shadow: 0 0 5px #18191a;
+  box-shadow: 0 0 5px #18191a;
+  background-color: white;
+  margin-bottom: 2%;
+  text-align: center;
 }
-
-#question-source #warnings{
+#question-configuration #qpp-settings {
+  width: 100%;
+}
+#QPP {
+  position: relative;
+  width: 80%;
+  margin: 0 0 0 0;
+}
+#QPP-value {
+  position: relative;
+  width: 10%;
+}
+#question-source label {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+#question-source label input{
+  position: relative;
+  width: 50%;
+}
+#question-type-options label {
+  position: relative;
+  text-align: left;
+  padding-left: 15%;
+  width: 100%;
+}
+#question-type-options label input {
+  position: relative;
+  margin-right: 10%;
+}
+#settings-wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 0;
+}
+#question-source #warnings {
   text-align: left;
   font-weight: bold;
   padding: 2px;
@@ -12,7 +56,6 @@
   display: block;
   margin: 2px;
 }
-
 #startStudyLockButton {
   padding: 2px;
   display: block;
