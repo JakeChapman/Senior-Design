@@ -107,7 +107,7 @@
   }
 
   #layout-main-content {
-    padding-top: 2%;
+    padding-top: 0%;
   }
   .card {
     position: relative;
@@ -118,7 +118,7 @@
     -webkit-box-shadow: 0 0 5px #18191a;
     box-shadow: 0 0 5px #18191a;
     background-color: white;
-    margin-bottom: 2%;
+    margin-top: 2%;
   }
   #feed-wrapper #profile-overview {
     height: %;

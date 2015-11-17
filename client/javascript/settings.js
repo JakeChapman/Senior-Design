@@ -2,6 +2,9 @@ if (Meteor.isClient) {
 
   Session.setDefault("diff", 0);
   Session.setDefault("numQuestions", 0);
+  Session.setDefault("time", 0);
+  Session.setDefault("hQuestions", 0);
+
   end = undefined;
 
 
@@ -11,6 +14,12 @@ if (Meteor.isClient) {
   };
   var getQPP = function(){
     return Session.get("numQuestions");
+  };
+  var getTPD = function(){
+    return Session.get("time");
+  };
+  var getQPH = function(){
+    return Math.round(Math.round(getQPP() / getDiff()) / getTPD());
   };
 
   Template.settings.helpers({
@@ -25,6 +34,12 @@ if (Meteor.isClient) {
     QPP: function() {
       return Math.round(getQPP() / getDiff());
     },
+    hours: function(){
+      return getTPD();
+    },
+    QPH: function(){
+      return getQPH();
+    }
   });
 
   Template.settings.events({
@@ -50,12 +65,35 @@ if (Meteor.isClient) {
     },
 
     "change #QPP-value": function(event, template){
-      Session.set("numQuestions", event.target.value );
+      Session.set("numQuestions", event.target.value);
+    },
+
+    "change #start-time": function(event, template){
+      sTime = event.target.value;
+      if(eTime){
+        minutes = parseTime(eTime) - parseTime(sTime);
+        Session.set("time", Math.round(minutes / 60));
+      }
+      console.log("Time: " + sTime);
+    },
+
+    "change #end-time": function(event, template){
+      eTime = event.target.value;
+      console.log("Time: " + eTime);
+      minutes = parseTime(eTime) - parseTime(sTime);
+      console.log("Time Difference: " + minutes);
+      Session.set("time", Math.round(minutes / 60));
     }
   });
 
   Template.settings.rendered = function() {
     Session.set("diff", 0);
     Session.set("numQuestions", 0);
+    Session.set("time", 0);
+    Session.set("hQuestions", 0);
   };
+}
+function parseTime(s) {
+   var c = s.split(':');
+   return parseInt(c[0]) * 60 + parseInt(c[1]);
 }

@@ -5,7 +5,7 @@ if (Meteor.isClient) {
       toRoute: 'rationale',
       velocityAnimation: {
           in: 'transition.slideRightIn',
-          out: 'transition.slideRightIn'
+          out: 'transition.slideLeftOut'
       }
   });
 

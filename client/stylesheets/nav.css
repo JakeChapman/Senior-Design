@@ -23,6 +23,7 @@
     margin: 0 auto;
     background-color: white;
     border-bottom-color: black;
+    border-style: double;
   }
 
   .navbar-main .nav{
