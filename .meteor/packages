@@ -19,10 +19,10 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 fourseven:scss
 ixdi:material-design-iconic-font
 twbs:bootstrap
-mrt:bootstrap-3
 chart:chart
-ccorcos:transitioner
 rajit:bootstrap3-datepicker
 react
 kadira:flow-router
 kadira:react-layout
+ian:accounts-ui-bootstrap-3
+accounts-password

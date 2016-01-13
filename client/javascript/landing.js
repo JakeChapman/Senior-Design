@@ -1,17 +1,3 @@
-Template.landing.helpers({
-  name: function() {
-    //Do some magic here and get the users name for this session,BUT
-    //in the meantime just return some stuff
-    return 'Sean Bostic';
-  },
-  classes: function() {
-    return 3;
-  },
-  friends: function() {
-    return 5;
-  }
-});
-
 //Javascript for chart below
 function drawChart() {
   var data = {
@@ -74,20 +60,3 @@ function drawChart() {
   var ctx = document.getElementById("activitiesChart").getContext("2d");
   var myBarChart = new Chart(ctx).Bar(data, options);
 }
-
-Template.registerHelper("active", function(routeName) {
-  var curRoute = Router.current().route;
-  console.log(curRoute);
-  return curRoute.getName() === routeName ? 'active' : '';
-});
-
-Template.landing.rendered = function(){
-    console.log("MADE IT");
-    drawChart();
-};
-
-
-
-Template.landing.events({
-
-});

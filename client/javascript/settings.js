@@ -1,3 +1,4 @@
+/*
 if (Meteor.isClient) {
 
   Session.setDefault("diff", 0);
@@ -97,3 +98,4 @@ function parseTime(s) {
    var c = s.split(':');
    return parseInt(c[0]) * 60 + parseInt(c[1]);
 }
+*/

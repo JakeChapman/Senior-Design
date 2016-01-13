@@ -7,7 +7,7 @@ if(Meteor.isServer){
 
 
   Meteor.publish('questions', function(){
-    questions = Question.find({});
+    questions = Questions.find({});
 
     if(questions){
       return questions;
