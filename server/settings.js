@@ -1,4 +1,30 @@
+Questions = new Mongo.Collection("Questions");
+QuestionHistory = new Mongo.Collection("QuestionHistory");
+
+
+
 if(Meteor.isServer){
-  process.env.MONGO_URL="mongodb://adminDev:sekret@candidate.53.mongolayer.com:10777/StudyLock";
-  console.log("MONGO URL is: " + process.env.MONGO_URL);
+
+
+  Meteor.publish('questions', function(){
+    questions = Question.find({});
+
+    if(questions){
+      return questions;
+    }
+
+
+    return this.ready();
+  });
+
+  Meteor.publish('history', function(){
+    history = QuestionHistory.find({});
+
+    if(history){
+      return history;
+    }
+
+    return this.ready();
+  });
+
 }
