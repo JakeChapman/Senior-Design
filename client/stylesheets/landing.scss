@@ -1,0 +1,33 @@
+.card {
+  position: relative;
+  margin: 0 2% 0 2%;
+  width: 95%;
+  -moz-box-shadow: 0 0 5px #18191a;
+  -webkit-box-shadow: 0 0 5px #18191a;
+  box-shadow: 0 0 5px #18191a;
+  background-color: white;
+  margin-top: 2%;
+}
+
+#feed-wrapper{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+}
+
+#profile-overview{
+  display: inline-flex;
+  #profile-picture img {
+    position: relative;
+    margin: 5% 5% 5% 5%;
+    border-radius: 75%;
+    width: 75%;
+    height: auto;
+  }
+  #profile-picture{
+    margin: 0 5% 0 5%;
+    width: 15%;
+  }
+}

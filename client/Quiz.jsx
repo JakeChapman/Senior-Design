@@ -7,7 +7,15 @@ Quiz = React.createClass({
       question: Questions.find({}).fetch()
     };
   },
+  componentDidMount(){
+    $("#navQuiz").toggleClass("nonfocus");
+    $("#navQuiz").toggleClass("focus");
+  },
 
+  componentWillUnmount(){
+    $("#navQuiz").toggleClass("nonfocus");
+    $("#navQuiz").toggleClass("focus");
+  },
   render() {
     return (
       <div className="container" id="quiz-wrapper">

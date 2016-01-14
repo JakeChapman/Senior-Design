@@ -1,0 +1,92 @@
+#question-configuration {
+  position: relative;
+  margin: 0 0 0 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 5%;
+  text-align: left;
+}
+#period-settings {
+  margin-bottom: 5%;
+}
+#period-settings input {
+  float: right;
+}
+#totals {
+  text-align: center;
+}
+#engine{
+  text-align: center;
+  margin-top: 5%;
+}
+#question-type-options h3 {
+  border-bottom-color: black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: dashed;
+  text-align: left;
+}
+#question-configuration h3 {
+  border-bottom-color: black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: dashed;
+  text-align: left;
+}
+#question-configuration #qpp-settings {
+  width: 100%;
+  margin-bottom: 5%;
+}
+#QPP {
+  position: relative;
+  width: 80%;
+  margin: 0 0 0 0;
+}
+#QPP-value {
+  position: relative;
+  width: 10%;
+}
+#question-source label {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+#question-source label input {
+  position: relative;
+  width: 50%;
+}
+#question-type-options label {
+  position: relative;
+  text-align: left;
+  padding-left: 15%;
+  width: 100%;
+}
+#question-type-options label input {
+  position: relative;
+  margin-right: 10%;
+}
+#settings-wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 0;
+  background-color: white;
+  overflow: hidden;
+}
+#question-source #warnings {
+  text-align: left;
+  font-weight: bold;
+  padding: 2px;
+}
+#stopStudyLockButton {
+  padding: 2px;
+  display: block;
+  margin: 2px;
+}
+#startStudyLockButton {
+  padding: 2px;
+  display: block;
+  margin: 2px;
+  height: 60%;
+}

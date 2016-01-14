@@ -27,7 +27,7 @@ FlowHelpers = {
 
 FlowRouter.route('/', {
   subscriptions: function() {
-    this.register('questions', Meteor.subscribe('questions'));
+    this.register('history', Meteor.subscribe('history'));
   },
   action: function(params) {
     ReactLayout.render(Layout, {

@@ -1,4 +1,13 @@
 Notes = React.createClass({
+  componentDidMount(){
+    $("#navNotes").toggleClass("nonfocus");
+    $("#navNotes").toggleClass("focus");
+  },
+
+  componentWillUnmount(){
+    $("#navNotes").toggleClass("nonfocus");
+    $("#navNotes").toggleClass("focus");
+  },
   render(){
     return(
       <div className="container" id="notes-container">

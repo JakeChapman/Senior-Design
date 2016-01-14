@@ -14,4 +14,4 @@ Layout = React.createClass({
       </div>
     )
   }
-})
+});

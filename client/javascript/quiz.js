@@ -1,13 +1,5 @@
 if (Meteor.isClient) {
 
-  Transitioner.transition({
-      fromRoute: 'quiz',
-      toRoute: 'rationale',
-      velocityAnimation: {
-          in: 'transition.slideRightIn',
-          out: 'transition.slideLeftOut'
-      }
-  });
 
   //Meteor.subscribe('questions');
   //console.log("Loaded Questions");
