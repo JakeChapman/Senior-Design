@@ -1,4 +1,4 @@
-if (Meteor.isClient) {
+/*if (Meteor.isClient) {
 
 
   //Meteor.subscribe('questions');
@@ -109,3 +109,4 @@ function getQuestion() {
 
   return questions[counter];
 }
+*/

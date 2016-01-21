@@ -1,10 +1,11 @@
-Questions = new Mongo.Collection("Questions");
-QuestionHistory = new Mongo.Collection("QuestionHistory");
+//Questions = new Mongo.Collection("Questions");
+//QuestionHistory = new Mongo.Collection("QuestionHistory");
 
 
 
 if(Meteor.isServer){
-
+  Questions = new Mongo.Collection("Questions");
+  QuestionHistory = new Mongo.Collection("QuestionHistory");
 
   Meteor.publish('questions', function(){
     questions = Questions.find({});
