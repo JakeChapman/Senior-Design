@@ -1,7 +1,3 @@
-//Collections
-Questions = new Mongo.Collection("Questions");
-QuestionHistory = new Mongo.Collection("QuestionHistory");
-
 if (Meteor.isClient) {
   // This code is executed on the client only
   Accounts.config({
@@ -10,13 +6,10 @@ if (Meteor.isClient) {
     //loginExpirationDays: 30,
     //oauthSecretKey: "wgporjigrpqgdfg",
   });
-  Accounts.ui.config({requestPermissions: {}, requestOfflineToken: {}, passwordSignupFields: "EMAIL_ONLY"});
+  //Accounts.ui.config({requestPermissions: {}, requestOfflineToken: {}, passwordSignupFields: "EMAIL_ONLY"});
 
   Meteor.startup(function() {
     // Use Meteor.startup to render the component after the page is ready
     //React.render(<App />, document.getElementById("render-target"));
   });
 };
-
-Meteor.methods({
-});

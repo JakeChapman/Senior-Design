@@ -25,3 +25,5 @@ react
 kadira:flow-router
 kadira:react-layout
 accounts-password
+aldeed:simple-schema
+dburles:collection-helpers

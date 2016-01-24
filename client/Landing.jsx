@@ -89,10 +89,7 @@ Landing = React.createClass({
   mixins: [ReactMeteorData],
 
   getMeteorData() {
-    return {
-      user: Meteor.user(),
-      history: QuestionHistory.find({}).fetch()
-    };
+    return {user: Meteor.user(), log: QuestionsLog.find({}, {limit: 20}).fetch(), questions: Questions.find({})};
   },
 
   getInitialState() {
@@ -110,14 +107,14 @@ Landing = React.createClass({
   },
 
   renderHistory() {
-    return this.data.history.map((entry) => {
-      return <Entry key={entry._id} question_id={entry.question_id} correct={entry.correct}/>;
+    return this.data.log.map((entry) => {
+      return <Entry key={entry._id} log={entry}/>;
     });
   },
 
   render() {
     return (
-      <div className="container" id="feed-wrapper">
+      <div className="container" id="log-wrapper">
 
         <div className="card" id="profile-overview">
           <div id="profile-picture">
@@ -137,7 +134,7 @@ Landing = React.createClass({
         </div>
         <h4 className="entryList">Jane Doe&#39;s Activity</h4>
 
-        <div className="card" id="activity-feed-wrapper">
+        <div className="container" id="log-wrapper">
           {this.renderHistory()}
         </div>
 
