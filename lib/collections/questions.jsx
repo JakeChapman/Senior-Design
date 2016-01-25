@@ -4,6 +4,13 @@ Questions = new Mongo.Collection("Questions");
 Meteor.methods({
 });
 
+//Helpers
+Questions.helpers({
+  nextQuestion: function(){
+    
+  }
+});
+
 //Schema Definitions to be used to validate documents
 
 Question = new SimpleSchema({
