@@ -3,6 +3,9 @@ QuestionsSettings = React.createClass({
     return {qpp: 0, startDate: "", endDate: "", startTime: "", endTime: ""}
   },
 
+  changeValues(){
+  },
+
   render() {
     return (
       <form className="form-horizontal" role="form">
@@ -11,7 +14,7 @@ QuestionsSettings = React.createClass({
           <label className="control-label col-sm-2 zmdi zmdi-help" for="questions-per-period">
             Number of Questions per Period:</label>
           <div className="col-sm-10">
-            <input className="form-control" name="questions-per-period" type="numeric"/>
+            <input className="form-control" name="questions-per-period" type="numeric" onChange={this.changeValues}/>
           </div>
         </div>
 

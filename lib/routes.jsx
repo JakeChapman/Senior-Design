@@ -32,7 +32,7 @@ FlowRouter.route('/', {
   },
   action: function(params) {
     ReactLayout.render(Layout, {
-      content: <Landing/>
+      content: <Login/>
     });
   }
 });
