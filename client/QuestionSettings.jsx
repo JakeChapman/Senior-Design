@@ -54,7 +54,7 @@ QuestionsSettings = React.createClass({
           </div>
         </div>
 
-        <div className="form-group" id="totals">
+        <div className="form-group center_div" id="totals">
           <div className="col-sm-6">
             <label className="control-label">
               Total time of Period: Days:

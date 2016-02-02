@@ -1,10 +1,13 @@
-#settingsHeader{
+#settings-wrapper {
+  overflow: auto;
+}
+#settingsHeader {
   text-align: center;
   font-size: xx-large;
   font-weight: bolder;
 }
-#totals{
-  span{
+#totals {
+  span {
     margin: 0 0 0 5px;
   }
 }
