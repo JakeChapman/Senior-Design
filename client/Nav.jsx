@@ -3,7 +3,7 @@ Nav = React.createClass({
 
   render(){
     return(
-      <div className="navbar navbar-main navbar-default navbar-fixed-top" id='navbar-top'>
+      <nav className="navbar navbar-main navbar-default navbar-fixed-top" id='navbar-top'>
 
         <ul className="nav navbar-nav">
           <div id="navItem">
@@ -36,7 +36,7 @@ Nav = React.createClass({
           </div>
         </ul>
 
-      </div>
+      </nav>
     )
   }
 })

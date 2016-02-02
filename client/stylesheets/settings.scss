@@ -1,5 +1,13 @@
 #settings-wrapper {
-  overflow: auto;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0 0 0;
+  position: absolute;
+  overflow: scroll;
+  div{
+    padding-bottom: 10px;
+  }
 }
 #settingsHeader {
   text-align: center;
