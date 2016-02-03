@@ -5,7 +5,6 @@ html {
   height: 100%;
   width: 100%;
 }
-
 .main-content-wrapper {
   height: 100%;
   width: 100%;
@@ -14,7 +13,24 @@ html {
   overflow: hidden;
   background-color: rgba(#959595, 0.01);
 }
-.center_div{
-    margin: 0 auto;
-    width:80% /* value of your choice which suits your alignment */
+.center_div {
+  margin: 0 auto;
+  width: 80%;
+  /* value of your choice which suits your alignment */
+}
+#login-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: table;
+  background-color: #1e8cad;
+  form {
+    vertical-align: middle;
+    display: table-cell;
+    #login-form {
+      background-color: white;
+      border-width: medium;
+      border-style: double;
+    }
+  }
 }
