@@ -82,7 +82,7 @@ QuestionsSettings = React.createClass({
       <div className="container">
 
         <div className="form-group" id="qSettings">
-          <label className="control-label col-sm-3" for="questions-per-period">
+          <label className="control-label col-sm-3" htmlFor="questions-per-period">
             <i className="zmdi zmdi-help"></i>
             Number of Questions per Period:</label>
           <div className="col-sm-9">
@@ -91,7 +91,7 @@ QuestionsSettings = React.createClass({
         </div>
 
         <div className="datetimepicker form-group" id="period-settings">
-          <label className="control-label col-sm-3" for="start-period">
+          <label className="control-label col-sm-3" htmlFor="start-period">
             <i className="zmdi zmdi-calendar zmdi-hc"></i>
             Start Date:</label>
           <div className="col-sm-9">
@@ -100,7 +100,7 @@ QuestionsSettings = React.createClass({
         </div>
 
         <div className="datetimepicker form-group" id="period-settings">
-          <label className="control-label col-sm-3" for="end-period">
+          <label className="control-label col-sm-3" htmlFor="end-period">
             <i className="zmdi zmdi-calendar zmdi-hc"></i>
             End Date:</label>
           <div className="col-sm-9">
@@ -109,7 +109,7 @@ QuestionsSettings = React.createClass({
         </div>
 
         <div className="form-group" id="period-settings">
-          <label className="control-label col-sm-3" for="start-time">
+          <label className="control-label col-sm-3" htmlFor="start-time">
             <i className="zmdi zmdi-time zmdi-hc"></i>
             Start Time:</label>
           <div className="col-sm-9">
@@ -118,7 +118,7 @@ QuestionsSettings = React.createClass({
         </div>
 
         <div className="form-group" id="period-settings">
-          <label className="control-label col-sm-3" for="end-time">
+          <label className="control-label col-sm-3" htmlFor="end-time">
             <i className="zmdi zmdi-time zmdi-hc"></i>
             End Time:</label>
           <div className="col-sm-9">

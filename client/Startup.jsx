@@ -1,4 +1,7 @@
 if (Meteor.isClient) {
+
+  document.getElementsByTagName("head")[0].innerHTML += "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">";
+
   // This code is executed on the client only
   Accounts.config({
     sendVerificationEmail: true, forbidClientAccountCreation: true,
