@@ -48,6 +48,11 @@ logging@1.0.8
 mdg:validation-error@0.2.0
 meteor@1.1.10
 meteor-base@1.0.1
+meteorflux:dispatcher@1.2.3
+meteorflux:meteorflux@1.2.2
+meteorflux:meteorflux-debug@1.0.0
+meteorflux:namespace@1.0.0
+meteorflux:reactive-state@1.4.0
 minifiers@1.1.7
 minimongo@1.0.10
 mizzao:bootboxjs@4.4.0

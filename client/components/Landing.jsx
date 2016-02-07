@@ -86,12 +86,6 @@ function drawChart() {
 
 Landing = React.createClass({
 
-  mixins: [ReactMeteorData],
-
-  getMeteorData() {
-    return {user: Meteor.user(), log: QuestionsLog.find({}, {limit: 20}).fetch(), questions: Questions.find({})};
-  },
-
   getInitialState() {
     return {active: false};
   },
@@ -107,7 +101,7 @@ Landing = React.createClass({
   },
 
   renderHistory() {
-    return this.data.log.map((entry) => {
+    return this.props.userLog.map((entry) => {
       return <Entry key={entry._id} log={entry}/>;
     });
   },

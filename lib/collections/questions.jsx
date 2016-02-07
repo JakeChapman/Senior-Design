@@ -7,7 +7,7 @@ Meteor.methods({
 //Helpers
 Questions.helpers({
   nextQuestion: function(){
-    
+
   }
 });
 

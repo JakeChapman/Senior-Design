@@ -11,9 +11,9 @@ Answer = React.createClass({
     this.setState({btnTag: this.props.key});
   },
 
-  checkAnswer(){
+  checkAnswer(correct){
     this.setState({selected: true});
-    this.props.onClick();
+    this.props.onClick(correct);
   },
 
   render() {

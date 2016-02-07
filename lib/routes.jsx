@@ -26,40 +26,30 @@ FlowHelpers = {
 // Flow Router here down
 
 FlowRouter.route('/', {
-  subscriptions: function() {
-    this.register('log', Meteor.subscribe('log'));
-    this.register('questions', Meteor.subscribe('questions'));
-  },
   action: function(params) {
-    ReactLayout.render(Layout, {
-      content: <Landing/>
-    });
+    if (State.get('userSetup')) {
+      Dispatcher.dispatch('GET_LANDING');
+    } else {
+      Dispatcher.dispatch('SETUP_USER');
+    }
   }
 });
 
 FlowRouter.route('/settings', {
-  action: function(params){
-    ReactLayout.render(Layout, {
-      content: <Settings/>
-  });
+  action: function(params) {
+    ReactLayout.render(Layout, {content: <Settings/>});
   }
 });
 
 FlowRouter.route('/quiz', {
-  subscriptions: function() {
-    this.register('questions', Meteor.subscribe('questions'));
-  },
-  action: function(params){
-    ReactLayout.render(Layout, {
-      content: <Quiz/>
-  });
+  action: function(params) {
+    console.log('Calling Dispatcher');
+    Dispatcher.dispatch('GET_QUESTION');
   }
 });
 
 FlowRouter.route('/notes', {
-  action: function(params){
-    ReactLayout.render(Layout, {
-      content: <Notes/>
-  });
+  action: function(params) {
+    ReactLayout.render(Layout, {content: <Notes/>});
   }
 });

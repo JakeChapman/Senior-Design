@@ -4,7 +4,7 @@ Entry = React.createClass({
 
   getMeteorData() {
     return {
-      question: Questions.findOne(new Meteor.Collection.ObjectID(this.props.log.question_id._str))
+      question: Questions.findOne(new Meteor.Collection.ObjectID(this.props.log.question_id))
     };
   },
 

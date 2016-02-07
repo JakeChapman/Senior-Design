@@ -17,6 +17,12 @@ QuestionLog = new SimpleSchema({
   question_id: {
     type: String
   },
+  user_id: {
+    type: String
+  },
+  answeredOn: {
+    type: Date
+  },
   correct: {
     type: Boolean
   }
