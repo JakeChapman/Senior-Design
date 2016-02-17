@@ -14,10 +14,10 @@ Answers = React.createClass({
   handleClick(guess){
     if(guess.correct){
       alert("GOOD JOB");
-      this.props.onClick(true);
+      this.props.onClick(true, this.props.question);
     }else{
       alert("TRY HARDER");
-      this.props.onClick(false);
+      this.props.onClick(false, this.props.question);
     }
   },
 

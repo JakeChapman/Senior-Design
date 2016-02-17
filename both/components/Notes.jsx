@@ -24,4 +24,4 @@ Notes = React.createClass({
       </div>
     )
   }
-})
+});

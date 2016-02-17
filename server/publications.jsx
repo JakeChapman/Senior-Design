@@ -1,25 +1,16 @@
 if (Meteor.isServer) {
 
   Meteor.publish('questions', function() {
-    questions = Questions.find({});
-
-    if (questions) {
-      return questions;
-    }
-
-    return this.ready();
+    return Questions.find({});
   });
 
   console.log("Published Questions");
 
-  Meteor.publish('log', function() {
-    log = QuestionsLog.find({});
-
-    if (log) {
-      return log;
-    }
-
-    return this.ready();
+  Meteor.publish('log', function(limitCount, userId) {
+    return [
+        QuestionsLog.find({user_id: userId}, {sort: {answeredOn: -1}}),
+        Questions.find({})
+        ];
   });
 
   QuestionsLog.allow({

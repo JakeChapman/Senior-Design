@@ -39,4 +39,4 @@ Nav = React.createClass({
       </nav>
     )
   }
-})
+});

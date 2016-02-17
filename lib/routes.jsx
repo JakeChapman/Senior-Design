@@ -27,10 +27,10 @@ FlowHelpers = {
 
 FlowRouter.route('/', {
   action: function(params) {
-    if (State.get('userSetup')) {
-      Dispatcher.dispatch('GET_LANDING');
+    if (User.loggedIn()) {
+      ReactLayout.render(Layout, {content: <Landing/>});
     } else {
-      Dispatcher.dispatch('SETUP_USER');
+      ReactLayout.render(Login);
     }
   }
 });
@@ -43,8 +43,7 @@ FlowRouter.route('/settings', {
 
 FlowRouter.route('/quiz', {
   action: function(params) {
-    console.log('Calling Dispatcher');
-    Dispatcher.dispatch('GET_QUESTION');
+    ReactLayout.render(Layout, {content: <QuizContainer/>});
   }
 });
 

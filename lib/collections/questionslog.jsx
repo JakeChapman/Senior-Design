@@ -4,6 +4,25 @@ QuestionsLog = new Mongo.Collection("QuestionsLog");
 console.log("Here");
 
 Meteor.methods({
+
+  "Log.create": function(data){
+      let docId;
+
+      if (!this.userId) throw new Meteor.Error(401,"Login Required");
+
+      check(data, QuestionLog);
+
+
+      docId = QuestionsLog.insert(data);
+
+      QuizDomain.updateCounts();
+
+      console.log("[Log.create]", docId);
+
+      return docId;
+
+  }
+
 });
 
 //Collection helpers

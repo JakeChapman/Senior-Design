@@ -31,3 +31,4 @@ meteorflux:meteorflux
 check
 meteorflux:dispatcher
 meteorflux:reactive-state
+meteorhacks:aggregate

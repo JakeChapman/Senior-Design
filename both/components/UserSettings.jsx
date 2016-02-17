@@ -21,4 +21,4 @@ Settings = React.createClass({
       </div>
     )
   }
-})
+});

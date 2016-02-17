@@ -9,13 +9,15 @@ Entry = React.createClass({
   },
 
   render() {
-    if (typeof this.data.question == "undefined") {
-      return (
-        <div className="card">
-          No result
-        </div>
-      )
-    } else {
+      var logText;
+      if(typeof  this.props.question === 'undefined'){
+          logText = <div></div>;
+      }else{
+          logText = <div id="qText">
+                        {this.props.question.text}
+                    </div>
+      }
+
       return (
         <div className="card">
           <div id="result">
@@ -23,11 +25,8 @@ Entry = React.createClass({
               ? "Correct"
               : "Wrong"}
           </div>
-          <div id="qText">
-            {this.data.question.text}
-          </div>
+            {logText}
         </div>
       )
-    }
   }
 });

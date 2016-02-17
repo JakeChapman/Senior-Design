@@ -62,4 +62,4 @@ Login = React.createClass({
       </div>
     )
   }
-})
+});

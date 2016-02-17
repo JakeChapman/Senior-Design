@@ -33,7 +33,6 @@ Answer = React.createClass({
         backgroundColor: 'white'
       };
     }
-    console.log(this.props.text);
     return (
       <button type="button" className="btn btn-default btn-sm btn-answer" style={btnColor} onClick={this.checkAnswer}>{this.props.text}</button>
     )

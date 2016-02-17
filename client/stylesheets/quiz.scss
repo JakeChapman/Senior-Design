@@ -3,6 +3,7 @@
   height: 100%;
   margin: 0;
   padding-top: 2%;
+  text-align: center;
 }
 #answer {
   color: #000;
@@ -11,6 +12,16 @@
 #quiz-question {
   height: 15%;
   position: relative;
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-weight: bolder;
+  font-size: larger;
+  display: inline-block;
+  #qText{
+    position: relative;
+    margin-top: 5%;
+    text-align: center;
+  }
 }
 #question {
   position: relative;
@@ -52,4 +63,29 @@
   height: auto;
   text-align: center;
   vertical-align: middle;
+}
+.modal {
+  display:    none;
+  position:   fixed;
+  z-index:    1000;
+  top:        0;
+  left:       0;
+  height:     100%;
+  width:      100%;
+  background: rgba( 255, 255, 255, .8 )
+  url('http://i.stack.imgur.com/FhHRx.gif')
+  50% 50%
+  no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+  overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+  display: block;
 }

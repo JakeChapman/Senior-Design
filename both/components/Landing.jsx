@@ -86,9 +86,6 @@ function drawChart() {
 
 Landing = React.createClass({
 
-  getInitialState() {
-    return {active: false};
-  },
   componentDidMount() {
     $("#navHome").toggleClass("nonfocus");
     $("#navHome").toggleClass("focus");
@@ -101,12 +98,20 @@ Landing = React.createClass({
   },
 
   renderHistory() {
-    return this.props.userLog.map((entry) => {
-      return <Entry key={entry._id} log={entry}/>;
-    });
+    console.log(this.state.userLog);
+      if(this.state.userLog === {}){
+          return <div></div>
+      }else {
+          return this.state.userLog.map((entry) => {
+              return <Entry key={entry._id} log={entry}/>;
+          });
+      }
   },
 
   render() {
+
+    //this.setState({userLog: State.get('userLog')});
+
     return (
       <div className="container" id="log-wrapper">
 
@@ -129,10 +134,10 @@ Landing = React.createClass({
         <h4 className="entryList">Jane Doe&#39;s Activity</h4>
 
         <div className="container" id="log-wrapper">
-          {this.renderHistory()}
+          <LogContainer/>
         </div>
 
       </div>
     )
   }
-})
+});
