@@ -2,36 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ce2b12b-9846-4995-94dc-c9e8680cfaca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/both/components/Loading.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/both/components/Log/LogContainer.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/both/components/Log/LogList.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/both/components/Quiz/QuizContainer.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/both/domains/log_domain.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/both/domains/quiz_domain.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/both/models/user.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/actions.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/state.jsx" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/components/Landing.jsx" afterPath="$PROJECT_DIR$/both/components/Landing.jsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/components/Layout.jsx" afterPath="$PROJECT_DIR$/both/components/Layout.jsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/components/Login.jsx" afterPath="$PROJECT_DIR$/both/components/Login.jsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/components/Nav.jsx" afterPath="$PROJECT_DIR$/both/components/Nav.jsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/components/Notes.jsx" afterPath="$PROJECT_DIR$/both/components/Notes.jsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/components/QuestionSettings.jsx" afterPath="$PROJECT_DIR$/both/components/QuestionSettings.jsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/components/Quiz.jsx" afterPath="$PROJECT_DIR$/both/components/Quiz/QuizPage.jsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/components/Registration.jsx" afterPath="$PROJECT_DIR$/both/components/Registration.jsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/components/Startup.jsx" afterPath="$PROJECT_DIR$/both/components/Startup.jsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/components/UserSettings.jsx" afterPath="$PROJECT_DIR$/both/components/UserSettings.jsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/models/Answer.jsx" afterPath="$PROJECT_DIR$/both/components/Quiz/Answer.jsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/models/Answers.jsx" afterPath="$PROJECT_DIR$/both/components/Quiz/Answers.jsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/models/Entry.jsx" afterPath="$PROJECT_DIR$/both/components/Log/Entry.jsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/models/Question.jsx" afterPath="$PROJECT_DIR$/both/components/Quiz/Question.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/quiz.scss" afterPath="$PROJECT_DIR$/client/stylesheets/quiz.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/collections/questionslog.jsx" afterPath="$PROJECT_DIR$/lib/collections/questionslog.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/routes.jsx" afterPath="$PROJECT_DIR$/lib/routes.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/publications.jsx" afterPath="$PROJECT_DIR$/server/publications.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/both/components/Login.jsx" afterPath="$PROJECT_DIR$/both/components/Login.jsx" />
     </list>
     <ignored path="senior-design.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,7 +23,7 @@
     <favorites_list name="senior-design" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.56471497">
+    <splitter split-orientation="vertical" split-proportion="0.4683153">
       <split-first>
         <leaf>
           <file leaf-file-name="Entry.jsx" pinned="false" current-in-tab="false">
@@ -86,11 +58,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="quiz_domain.jsx" pinned="false" current-in-tab="true">
+          <file leaf-file-name="quiz_domain.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/both/domains/quiz_domain.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.864">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Login.jsx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/both/components/Login.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.23529412">
+                  <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
                   <folding />
                 </state>
               </provider>
@@ -165,7 +147,7 @@
           <file leaf-file-name="questionslog.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lib/collections/questionslog.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.9366755">
+                <state vertical-scroll-proportion="1.1305733">
                   <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
                   <folding />
                 </state>
@@ -231,7 +213,6 @@
         <option value="$PROJECT_DIR$/client/state.jsx" />
         <option value="$PROJECT_DIR$/client/actions.jsx" />
         <option value="$PROJECT_DIR$/both/domains/feed_domain.jsx" />
-        <option value="$PROJECT_DIR$/both/components/Login.jsx" />
         <option value="$PROJECT_DIR$/both/components/Landing.jsx" />
         <option value="$PROJECT_DIR$/both/domains/log_domain.jsx" />
         <option value="$PROJECT_DIR$/both/components/Log/LogList.jsx" />
@@ -251,6 +232,7 @@
         <option value="$PROJECT_DIR$/lib/collections/questionslog.js" />
         <option value="$PROJECT_DIR$/.meteor/packages" />
         <option value="$PROJECT_DIR$/both/domains/quiz_domain.jsx" />
+        <option value="$PROJECT_DIR$/both/components/Login.jsx" />
       </list>
     </option>
   </component>
@@ -266,8 +248,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
     <option name="y" value="24" />
-    <option name="width" value="1135" />
-    <option name="height" value="1576" />
+    <option name="width" value="1301" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -630,14 +612,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1135" height="1576" extended-state="6" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36443543" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16537867" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995266" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1573741" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13615024" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42503864" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35239568" sideWeight="0.49730977" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -934,14 +916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/both/components/Login.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23338735">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/collections/questions.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1092,7 +1066,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/collections/questionslog.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9366755">
+        <state vertical-scroll-proportion="1.1305733">
           <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
           <folding />
         </state>
@@ -1100,8 +1074,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/both/domains/quiz_domain.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.864">
+        <state vertical-scroll-proportion="0.0">
           <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/both/components/Login.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23529412">
+          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
           <folding />
         </state>
       </provider>

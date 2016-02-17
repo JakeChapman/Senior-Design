@@ -12,7 +12,7 @@ Login = React.createClass({
     Meteor.loginWithPassword(email, password, function(err) {
       if (!err) {
         bootbox.alert("Login Successful");
-        FlowRouter.go('/');
+        ReactLayout.render(Layout, {content: <Landing/>});
       } else {
         $("#registerModal").modal('show');
       }
