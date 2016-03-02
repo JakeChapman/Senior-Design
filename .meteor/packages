@@ -32,3 +32,4 @@ check
 meteorflux:dispatcher
 meteorflux:reactive-state
 meteorhacks:aggregate
+harrison:papa-parse
