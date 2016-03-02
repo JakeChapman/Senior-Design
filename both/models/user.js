@@ -21,6 +21,14 @@ User = {
         return Meteor.userId();
     },
 
+    name: function(){
+        var user = Meteor.user();
+        if(typeof user === 'undefined'){
+            return;
+        }
+        return user.profile.name;
+    },
+
     // returns user profile {Object}
     username: function() {
         return Meteor.user() && Meteor.user().username;

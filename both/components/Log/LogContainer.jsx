@@ -42,7 +42,7 @@ this.LogContainer = React.createClass({
 
     render() {
         return (
-            <LogList logItems={this.data.logItems}/>
+            <Landing logItems={this.data.logItems}/>
         )
     }
 });

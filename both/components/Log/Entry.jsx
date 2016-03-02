@@ -1,13 +1,5 @@
 Entry = React.createClass({
 
-  mixins: [ReactMeteorData],
-
-  getMeteorData() {
-    return {
-      question: Questions.findOne(new Meteor.Collection.ObjectID(this.props.log.question_id))
-    };
-  },
-
   render() {
       var logText;
       if(typeof  this.props.question === 'undefined'){

@@ -18,6 +18,9 @@ html {
   width: 80%;
   /* value of your choice which suits your alignment */
 }
+.modal-backdrop{
+  z-index: 50;
+}
 #login-wrapper {
   position: absolute;
   height: 100%;

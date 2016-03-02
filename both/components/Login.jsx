@@ -5,16 +5,39 @@ Login = React.createClass({
     //retrieve the input field values
     var email = $('#userEmail').val();
     var password = $('#userPassword').val();
-
     //Trim and validate your fields here....
     email = this.trimInput(email);
     console.log(email);
     Meteor.loginWithPassword(email, password, function(err) {
       if (!err) {
-        bootbox.alert("Login Successful");
-        ReactLayout.render(Layout, {content: <Landing/>});
+          console.log("going to main page");
+        ReactLayout.render(Layout, {content: <LogContainer/>});
       } else {
-        $("#registerModal").modal('show');
+          console.log("ERROR");
+        //("#registerModal").modal('show');
+          var name = "";
+        bootbox.prompt({
+            size: 'small',
+            title: 'What is your name?',
+            callback: function(result){
+                var userObject = {
+                    email: email,
+                    password: password,
+                    profile: {
+                        name: result
+                    }
+                };
+
+                Accounts.createUser(userObject, function(err) {
+                    if (!err) {
+                        bootbox.alert("Registration Successful");
+                        ReactLayout.render(Layout, {content: <LogContainer/>});
+                    } else {
+                        bootbox.alert("FAILED TO REGISTER");
+                    }
+                });
+            }
+        });
       }
     });
   },
@@ -56,9 +79,9 @@ Login = React.createClass({
               <button type="submit" className="btn btn-default col-xs-6 col-sm-6 col-lg-6 col-md-6 col-md-offset-3 col-xs-offset-3 col-sm-offset-3 col-lg-offset-3">Submit</button>
             </div>
 
-            <Registration/>
           </div>
         </form>
+
       </div>
     )
   }

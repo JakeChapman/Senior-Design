@@ -15,7 +15,6 @@ Meteor.methods({
 
       docId = QuestionsLog.insert(data);
 
-      QuizDomain.updateCounts();
 
       console.log("[Log.create]", docId);
 

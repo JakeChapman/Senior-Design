@@ -27,8 +27,8 @@ accounts-password
 aldeed:simple-schema
 dburles:collection-helpers
 mizzao:bootboxjs
-meteorflux:meteorflux
 check
-meteorflux:dispatcher
-meteorflux:reactive-state
 meteorhacks:aggregate
+momentjs:moment
+
+anonyfox:scrape

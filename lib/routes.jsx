@@ -28,7 +28,7 @@ FlowHelpers = {
 FlowRouter.route('/', {
   action: function(params) {
     if (User.loggedIn()) {
-      ReactLayout.render(Layout, {content: <Landing/>});
+      ReactLayout.render(Layout, {content: <LogContainer/>});
     } else {
       ReactLayout.render(Login);
     }

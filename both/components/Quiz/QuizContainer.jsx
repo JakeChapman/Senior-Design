@@ -16,7 +16,7 @@ this.QuizContainer = React.createClass({
     getInitialState(){
         return{
             answered: false
-        }
+        };
     },
 
     componentDidMount() {
@@ -30,7 +30,7 @@ this.QuizContainer = React.createClass({
     },
 
     startMeteorSubscriptions(){
-        return Meteor.subscribe("questions");
+        return Meteor.subscribe("questions", User.id());
     },
 
     getMeteorData(){
@@ -41,11 +41,16 @@ this.QuizContainer = React.createClass({
         };
     },
 
+    getRationale(){
+        console.log("setting state");
+      this.setState({answered: true});
+    },
+
     render(){
 
         if(typeof this.data.question === "undefined"){
             console.log("getting Loading page");
-            return <Loading/>
+            return <Loading dummy={this.data.question}/>
         }else{
             console.log("getting Actual page");
             let answer;
@@ -54,7 +59,7 @@ this.QuizContainer = React.createClass({
             });
 
             return (
-                <QuizPage question={this.data.question} correctAnswer={answer} answered={this.state.answered}/>
+                <QuizPage question={this.data.question} correctAnswer={answer} answered={this.state.answered} onClick={this.getRationale}/>
             )
         }
     }

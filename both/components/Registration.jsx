@@ -1,9 +1,10 @@
-Registration = React.createClass({
+this.Registration = React.createClass({
+
 
   registerUser() {
     //retrieve the input field values
-    var email = $('#userEmail').val();
-    var password = $('#userPassword').val();
+    var email = this.props.email;
+    var password = this.props.password;
     var profile = {
     };
 
@@ -35,6 +36,7 @@ Registration = React.createClass({
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-body">
+              <input type="text" id="usrName" placeholder="Enter Name Here"/>
               <button type="button" className="close" data-dismiss="modal">&times;</button>
               Do you want to create a new account?
             </div>
