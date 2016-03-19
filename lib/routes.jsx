@@ -37,7 +37,7 @@ FlowRouter.route('/', {
 
 FlowRouter.route('/settings', {
   action: function(params) {
-    ReactLayout.render(Layout, {content: <Settings/>});
+    ReactLayout.render(Layout, {content: <SettingsContainer/>});
   }
 });
 

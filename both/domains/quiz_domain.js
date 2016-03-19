@@ -21,5 +21,15 @@ QuizDomain = {
         let nxtQuestion = Questions.find().fetch();
         console.log(QuizDomain.count);
         return nxtQuestion;
+    },
+
+    startQuizTimer(interval){
+        return Meteor.setInterval(function(){
+            ReactLayout.render(QuizContainer);
+        },interval);
+    },
+
+    endQuizTimer(timerId){
+        Meteor.clearInterval(timerId);
     }
 };

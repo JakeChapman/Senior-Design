@@ -1,4 +1,9 @@
 class Rationale extends React.Component{
+    moveOn(){
+
+        ReactLayout.render(Layout, {content: <QuizContainer/>});
+    }
+
     render(){
 
         var answer = this.props.question.answers.filter(function(answer) {
@@ -16,6 +21,8 @@ class Rationale extends React.Component{
                 <div className="card" id="rationale">
                     {this.props.question.rationale}
                 </div>
+
+                <button className="btn btn-primary" onClick={this.moveOn}>Next Question</button>
             </div>
         )
     }

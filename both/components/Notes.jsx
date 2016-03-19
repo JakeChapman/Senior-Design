@@ -1,12 +1,24 @@
 Notes = React.createClass({
-  componentDidMount(){
+
+    getInitialState(){
+        return{
+            timer_id: ""
+        }
+    },
+
+    componentDidMount(){
     $("#navNotes").toggleClass("nonfocus");
     $("#navNotes").toggleClass("focus");
+
+      this.setState({timer_id: Meteor.setInterval(function(){
+          console.log("just working here");
+      }, 5000)});
   },
 
   componentWillUnmount(){
     $("#navNotes").toggleClass("nonfocus");
     $("#navNotes").toggleClass("focus");
+      Meteor.clearInterval(this.state.timer_id);
   },
   render(){
     return(

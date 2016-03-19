@@ -1,21 +1,12 @@
-#settings-wrapper {
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 0 0 0;
-  position: absolute;
-  overflow: scroll;
-  div{
-    padding-bottom: 10px;
-  }
-}
-#settingsHeader {
+.main-content-wrapper #settings-wrapper{
+  overflowoverflow-y: scroll;
+  margin: 7px 0 7px 0;
+
   text-align: center;
-  font-size: xx-large;
-  font-weight: bolder;
-}
-#totals {
-  span {
-    margin: 0 0 0 5px;
+  #qpp{
+    width: 20%;
+  }
+  #totals-table{
+    text-align: center;
   }
 }

@@ -30,21 +30,17 @@ class Landing extends React.Component{
 
     //this.setState({userLog: State.get('userLog')});
 
+      let profile = User.profile;
+      let topCard = (profile.qpd != 0 ? <Settings profile={profile}/> : <QuestionSetup/>);
+
     return (
       <div className="container" id="log-wrapper">
 
-        <div className="card" id="profile-overview">
-          <div id="profile-picture">
-            <img src="generic_profile.png" alt="profile"/>
-          </div>
-          <div id="profile-stats">
-            <h5>Name: Sean Bostic</h5>
-            <h5>Classes: Some Stuff</h5>
-            <h5>Friends: None</h5>
-          </div>
+        <div className="ui raised container segment" id="profile-overview">
+            {topCard}
         </div>
 
-        <div className="card" id="profile-log">
+        <div className="ui raised container segment" id="profile-log">
             <h2>Weekly Log</h2>
             <div id="profile-chart">
                 <canvas id="activitiesChart"></canvas>

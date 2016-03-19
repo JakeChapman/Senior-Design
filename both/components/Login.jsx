@@ -1,4 +1,4 @@
-Login = React.createClass({
+this.Login = React.createClass({
 
   handleLogin(event) {
     event.preventDefault();
@@ -15,36 +15,9 @@ Login = React.createClass({
       } else {
           console.log("ERROR");
         //("#registerModal").modal('show');
-          var name = "";
-        bootbox.prompt({
-            size: 'small',
-            title: 'What is your name?',
-            callback: function(result){
-                var userObject = {
-                    email: email,
-                    password: password,
-                    profile: {
-                        name: result
-                    }
-                };
-
-                Accounts.createUser(userObject, function(err) {
-                    if (!err) {
-                        bootbox.alert("Registration Successful");
-                        ReactLayout.render(Layout, {content: <LogContainer/>});
-                    } else {
-                        bootbox.alert("FAILED TO REGISTER");
-                    }
-                });
-            }
-        });
+          ReactLayout.render(Registration, {email: email, password: password});
       }
     });
-  },
-
-  handleNewUser(event) {
-    console.log("going to registration");
-    //  FlowRouter.go('/registration');
   },
 
   trimInput(val) {
@@ -81,7 +54,6 @@ Login = React.createClass({
 
           </div>
         </form>
-
       </div>
     )
   }

@@ -32,3 +32,5 @@ meteorhacks:aggregate
 momentjs:moment
 
 anonyfox:scrape
+semantic:ui
+flemay:less-autoprefixer
