@@ -28,9 +28,13 @@ aldeed:simple-schema
 dburles:collection-helpers
 mizzao:bootboxjs
 check
+
 meteorhacks:aggregate
 momentjs:moment
 
 anonyfox:scrape
 semantic:ui
 flemay:less-autoprefixer
+
+meteorhacks:aggregate
+harrison:papa-parse
