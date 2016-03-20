@@ -24,7 +24,7 @@ this.LogContainer = React.createClass({
     // subscribe to a reactive stream of data from
     // publication at:  server/publications.jsx
     startMeteorSubscriptions() {
-        var userId = User.id();
+        var userId = (typeof User.id() === 'undefined' ? "" : User.id());
         var recordCount = this.state.recordCount;
         return Meteor.subscribe("log", recordCount, userId);
     },

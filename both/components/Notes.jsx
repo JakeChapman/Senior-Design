@@ -40,9 +40,16 @@ Notes = React.createClass({
 
   render(){
     return(
-      <div className="container" id="notes-container">
-          <input type = "file" id="csv-file" name="file" onChange={this.performParse}/>
-      </div>
+        <div className="container" id="notes-wrapper">
+          <div className="ui raised container segment" id="notes-container">
+              <div className="ui large input">
+                <input type="file" id="csv-file" name="file" onChange={this.performParse}/>
+              </div>
+          </div>
+            <div className="ui raised container segment">
+                Notes Log goes here
+            </div>
+        </div>
     )
   }
 });

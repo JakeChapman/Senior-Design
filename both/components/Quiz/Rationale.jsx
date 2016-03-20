@@ -11,12 +11,22 @@ class Rationale extends React.Component{
         });
 
         console.log(answer);
+        let btnColor;
 
+        if(this.props.correct){
+            btnColor = {
+                backgroundColor: 'green'
+            };
+        }else{
+            btnColor = {
+                backgroundColor: 'red'
+            };
+        }
         return (
             <div className="container" id="quiz-wrapper">
                 <Question text={this.props.question.text}/>
                 <div className="correctAnswer">
-                    <Answer key={answer[0].index} text={answer[0].answer} correct={true}/>
+                    <Answer key={answer[0].index} text={answer[0].answer} correct={true} style={btnColor}/>
                 </div>
                 <div className="card" id="rationale">
                     {this.props.question.rationale}
@@ -29,7 +39,8 @@ class Rationale extends React.Component{
 }
 
 Rationale.propTypes = {
-    question: React.PropTypes.object
+    question: React.PropTypes.object,
+    correct: React.PropTypes.bool
 };
 
 this.Rationale = Rationale;

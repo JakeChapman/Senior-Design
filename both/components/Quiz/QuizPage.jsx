@@ -1,13 +1,19 @@
-class QuizPage extends React.Component{
+this.QuizPage = React.createClass({
 
+    getInitialState(){
+        return{
+            answered: false
+        }
+    },
 
     handleAnswer(correct, data) {
+        this.setState({answered: true});
         console.log(correct);
         let logEntry = {question_id: data._id._str, user_id: Meteor.userId(), answeredOn: new Date(), correct: correct};
         console.log(logEntry);
         QuizDomain.insertQuestionLog(logEntry);
-        ReactLayout.render(Layout, {content: <Rationale question={data}/>});
-    }
+        ReactLayout.render(Layout, {content: <Rationale question={data} correct={correct}/>});
+    },
 
     render() {
 
@@ -18,13 +24,11 @@ class QuizPage extends React.Component{
             </div>
           )
     }
-}
+});
 
 
-QuizPage.propTypes = {
+this.QuizPage.propTypes = {
     question: React.PropTypes.object,
     correctAnswer: React.PropTypes.array,
     answered: React.PropTypes.bool
 };
-
-this.QuizPage = QuizPage;

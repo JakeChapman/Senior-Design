@@ -13,19 +13,19 @@ Answers = React.createClass({
 
   handleClick(guess){
     if(guess.correct){
-      alert("GOOD JOB");
       this.props.onClick(true, this.props.question);
     }else{
-      alert("TRY HARDER");
       this.props.onClick(false, this.props.question);
     }
   },
 
   render() {
     return (
-      <div className="btn-group-vertical" id="answers">
-        {this.renderOptions()}
-      </div>
+        <div className="ui raised container segment">
+          <div className="large ui vertical buttons">
+            {this.renderOptions()}
+          </div>
+        </div>
     )
   }
 });

@@ -36,5 +36,5 @@ anonyfox:scrape
 semantic:ui
 flemay:less-autoprefixer
 
-meteorhacks:aggregate
 harrison:papa-parse
+codeempathy:react-timer-mixin

@@ -48,9 +48,9 @@ this.QuizContainer = React.createClass({
 
     render(){
 
-        if(typeof this.data.question === "undefined"){
+        if(typeof this.data.question === 'undefined'){
             console.log("getting Loading page");
-            return <Loading dummy={this.data.question}/>
+            return <Loading/>
         }else{
             console.log("getting Actual page");
             let answer;
