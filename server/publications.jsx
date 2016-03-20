@@ -34,7 +34,7 @@ if (Meteor.isServer) {
 
     Meteor.publish('log', function(limitCount, userId) {
     return [
-        QuestionsLog.find({ $and: [ {user_id: userId}, {answeredOn: { $gt: aboutAWeekAgo}}]}, {sort: {answeredOn: -1}}),
+        QuestionsLog.find({ $and: [ {user_id: userId}]}, {sort: {answeredOn: -1}}),
         Questions.find({})
         ];
     });

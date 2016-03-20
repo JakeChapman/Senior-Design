@@ -12,6 +12,21 @@ LogDomain = {
         return Questions.findOne(qId);
     },
 
+    getCorrectDay(offset){
+        var now = new Date().getDate();
+
+        if(now - offset <= 0){
+            var remainder = Math.abs(now - offset);
+            if(now.getMonth() % 2 === 0){
+                return 30 - remainder;
+            }else{
+                return 31 - remainder;
+            }
+        }else{
+            return now - offset;
+        }
+    },
+
     //Javascript for chart below
     drawChart() {
         var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
@@ -26,10 +41,11 @@ LogDomain = {
         var correctData = [];
         var Labels = [];
         for(var i = 6; i >=0; i--){
-            var tempCount = QuestionsLog.find({answeredOn: new Date(now.getDate() - i)}).count();
+            var day = this.getCorrectDay(i);
+            var tempCount = QuestionsLog.find({answeredOn: day}).count();
             if(tempCount > 0){
                 totalData.push(tempCount);
-                correctData.push(QuestionsLog.find({ $and: [{answeredOn: new Date(now.getDate() - i)}, {correct: true}]}).count());
+                correctData.push(QuestionsLog.find({ $and: [{answeredOn: day}, {correct: true}]}).count());
                 Labels.push(days[(((now.getDay() - i) >= 0) ? Math.abs(now.getDay() - i) : 7 - Math.abs(now.getDay() - i))]);
             }
         }
@@ -100,12 +116,22 @@ LogDomain = {
         };
 
         //Remove empty days
-
+        console.log(totalData.length);
         if(totalData.length > 0){
             var ctx = document.getElementById("activitiesChart").getContext("2d");
+            var canvas = document.getElementById("activitiesChart");
+            this.fitToContainer(canvas);
             var myBarChart = new Chart(ctx).Bar(data, options);
+
         }
 
+    },
+
+    fitToContainer(canvas){
+    canvas.style.width='100%';
+    canvas.style.height='100%';
+    canvas.width  = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
     }
 
 

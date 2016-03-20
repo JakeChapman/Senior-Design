@@ -9,7 +9,6 @@ this.Landing = React.createClass({
   componentDidMount() {
     $("#navHome").toggleClass("nonfocus");
     $("#navHome").toggleClass("focus");
-      LogDomain.drawChart();
       this.setState({ user : Meteor.user()});
   },
 
@@ -39,6 +38,7 @@ this.Landing = React.createClass({
     //this.setState({userLog: State.get('userLog')});
 
       let topCard = (typeof this.state.user === 'undefined' ? <QuestionSetup/> :  <Settings profile={this.state.user.profile}/>);
+
 
           return (
               <div className="container" id="log-wrapper">

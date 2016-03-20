@@ -71,6 +71,7 @@
         <item url="file://$USER_HOME$/.meteor/packages/sha/1.0.4/web.browser/sha256.js" />
         <item url="file://$USER_HOME$/.meteor/packages/nefiltari_yaki/0.1.81/web.browser/packages/nefiltari_yaki.js" />
         <item url="file://$USER_HOME$/.meteor/packages/codeempathy_react-timer-mixin/0.13.2/web.browser/react-timer-mixin.browserify.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/harrison_papa-parse/1.1.1/web.browser/papa-parse.js" />
         <item url="file://$USER_HOME$/.meteor/packages/session/1.1.1/web.browser/session.js" />
         <item url="file://$USER_HOME$/.meteor/packages/wizonesolutions_underscore-string/1.0.0/web.browser/packages/wizonesolutions:underscore-string.js" />
         <item url="file://$USER_HOME$/.meteor/packages/service-configuration/1.0.5/web.browser/service_configuration_common.js" />
@@ -234,6 +235,7 @@
       <root url="file://$USER_HOME$/.meteor/packages/nefiltari_yaki/0.1.81/web.browser/packages/nefiltari_yaki.js" />
       <root url="file://$USER_HOME$/.meteor/packages/sha/1.0.4/web.browser/sha256.js" />
       <root url="file://$USER_HOME$/.meteor/packages/codeempathy_react-timer-mixin/0.13.2/web.browser/react-timer-mixin.browserify.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/harrison_papa-parse/1.1.1/web.browser/papa-parse.js" />
       <root url="file://$USER_HOME$/.meteor/packages/session/1.1.1/web.browser/session.js" />
       <root url="file://$USER_HOME$/.meteor/packages/wizonesolutions_underscore-string/1.0.0/web.browser/packages/wizonesolutions:underscore-string.js" />
       <root url="file://$USER_HOME$/.meteor/packages/service-configuration/1.0.5/web.browser/service_configuration_common.js" />

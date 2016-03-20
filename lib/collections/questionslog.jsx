@@ -39,7 +39,7 @@ QuestionLog = new SimpleSchema({
     type: String
   },
   answeredOn: {
-    type: Date
+    type: Number
   },
   correct: {
     type: Boolean

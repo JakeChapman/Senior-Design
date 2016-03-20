@@ -24,10 +24,11 @@
   overflow: auto;
 }
 
-#profile-log{
-  text-align: center;
-
+#profile-chart{
+  position: relative;
   #activitiesChart{
+    position: relative;
+    width: 75%;
   }
 }
 

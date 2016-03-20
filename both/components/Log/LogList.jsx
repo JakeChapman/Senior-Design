@@ -1,6 +1,12 @@
 class LogList extends React.Component {
+
     render() {
         console.log("[FeedList] Rendering");
+
+        if(this.props.logItems != []){
+            console.log(this.props.logItems);
+            LogDomain.drawChart();
+        }
         return (
             <div>
                 {this.props.logItems.map(entry => {

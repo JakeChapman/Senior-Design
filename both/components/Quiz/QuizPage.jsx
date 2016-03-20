@@ -9,7 +9,7 @@ this.QuizPage = React.createClass({
     handleAnswer(correct, data) {
         this.setState({answered: true});
         console.log(correct);
-        let logEntry = {question_id: data._id._str, user_id: Meteor.userId(), answeredOn: new Date(), correct: correct};
+        let logEntry = {question_id: data._id._str, user_id: Meteor.userId(), answeredOn: new Date().getDate(), correct: correct};
         console.log(logEntry);
         QuizDomain.insertQuestionLog(logEntry);
         ReactLayout.render(Layout, {content: <Rationale question={data} correct={correct}/>});
