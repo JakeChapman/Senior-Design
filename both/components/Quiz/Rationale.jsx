@@ -25,13 +25,18 @@ class Rationale extends React.Component{
         return (
             <div className="container" id="quiz-wrapper">
                 <Question text={this.props.question.text}/>
+                <br/>
+                <br/>
                 <div className="correctAnswer">
                     <Answer key={answer[0].index} text={answer[0].answer} correct={true} style={btnColor}/>
                 </div>
-                <div className="card" id="rationale">
+                <br/>
+                <br/>
+                <div className="ui raised container segment" id="rationale">
                     {this.props.question.rationale}
                 </div>
-
+                <br/>
+                <br/>
                 <button className="btn btn-primary" onClick={this.moveOn}>Next Question</button>
             </div>
         )

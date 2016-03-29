@@ -5,11 +5,12 @@ this.Landing = React.createClass({
           user: Meteor.user()
       };
     },
-
   componentDidMount() {
     $("#navHome").toggleClass("nonfocus");
     $("#navHome").toggleClass("focus");
       this.setState({ user : Meteor.user()});
+      //Start Quiz Control
+     // User.quizControl();
   },
 
   componentWillUnmount() {
@@ -37,7 +38,14 @@ this.Landing = React.createClass({
 
     //this.setState({userLog: State.get('userLog')});
 
-      let topCard = (typeof this.state.user === 'undefined' ? <QuestionSetup/> :  <Settings profile={this.state.user.profile}/>);
+      let topCard;
+
+      if(typeof this.state.user === 'undefined'){
+          topCard = <QuestionSetup/>
+      }else{
+          topCard = (typeof this.state.user.profile.qpd === 'undefined' ? <QuestionSetup/> :  <Settings profile={this.state.user.profile}/>);
+
+      }
 
 
           return (

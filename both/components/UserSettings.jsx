@@ -40,11 +40,18 @@ this.SettingsContainer = React.createClass({
 
     updateProfile(){
         var QPP = $('#qpp').val();
-        var sDate = new Date($('#start-date').val());
-        var eDate = new Date($('#end-date').val());
+        var sDate = $('#start-date').val();
+        var eDate = $('#end-date').val();
         var sTime = this.parseTime($('#start-time').val());
         var eTime = this.parseTime($('#end-time').val());
-        var QPD = Math.round(QPP / (Math.ceil((Math.abs(eDate - sDate)) / (1000 * 3600 * 24))));
+
+        var sDay = sDate.split("/");
+        var eDay = eDate.split("/");
+
+        sDay = +sDay[1];
+        eDay = +eDay[1];
+
+        var QPD = Math.round(QPP / (Math.ceil((Math.abs(eDay - sDay)) / (1000 * 3600 * 24))));
 
 
         var settings = {
@@ -54,7 +61,8 @@ this.SettingsContainer = React.createClass({
             startTime: sTime,
             endTime: eTime,
             startDate: sDate,
-            endDate: eDate
+            endDate: eDate,
+            answered: false
         };
 
         var profile = User.profile();
@@ -62,6 +70,8 @@ this.SettingsContainer = React.createClass({
         $.extend(profile, settings);
 
         Meteor.users.update(curUser._id, {$set: {profile: profile}});
+
+        FlowRouter.go('/');
     },
 
     render() {

@@ -1,8 +1,8 @@
 this.Settings = React.createClass({
 
     render(){
-        let sDate = this.props.profile.startDate.toISOString().split("T");
-        let eDate = this.props.profile.endDate.toISOString().split("T");
+        let sDate = this.props.profile.startDate;
+        let eDate = this.props.profile.endDate;
         return (
             <div className="ui three column grid" id="settings-overview">
                 <div className="row">
@@ -26,7 +26,7 @@ this.Settings = React.createClass({
                     </div>
                     <div className="ui label">
                         Start Date - End Date
-                        <div className="detail">{sDate[0]} - {eDate[0]}</div>
+                        <div className="detail">{this.props.profile.startDate} - {this.props.profile.endDate}</div>
                     </div>
                 </div>
             </div>

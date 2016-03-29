@@ -13,6 +13,12 @@ this.QuizPage = React.createClass({
         console.log(logEntry);
         QuizDomain.insertQuestionLog(logEntry);
         ReactLayout.render(Layout, {content: <Rationale question={data} correct={correct}/>});
+
+        //Update profile
+        let curUser = Meteor.user();
+        let curProfile = curUser.profile;
+        curProfile.answered = true;
+        Meteor.users.update(curUser._id, {$set: {profile: curProfile}});
     },
 
     render() {

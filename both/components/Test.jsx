@@ -7,7 +7,15 @@ this.Test = React.createClass({
     render(){
         return(
             <div clasName="container">
-                <button onClick={this.testScrape} className="btn btn-primary">Run Test</button>
+
+                <div className="ui large header">Give Website name</div>
+
+                <div className="ui large input">
+                    <input type="text"  id="webURL"/>
+                </div>
+
+                <button onClick={this.testScrape} className="btn btn-primary">Run Web Scrape</button>
+
             </div>
         )
     }
