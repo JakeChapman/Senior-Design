@@ -30,7 +30,6 @@ Notes = React.createClass({
 
                     }
                 }
-
                 console.log(newQuestions);
             }
             });
@@ -76,7 +75,6 @@ Notes = React.createClass({
                     4. Finally, please make sure uploaded files are in the .txt extension.
                 </p>
 
-                <button className="ui black button" onClick={this.sendNotification}>Send Notification</button>
             </div>
 
         </div>

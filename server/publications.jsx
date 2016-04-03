@@ -94,50 +94,6 @@ if (Meteor.isServer) {
 
 
             console.log(websiteData);
-        },
-
-        "Push.pester": function(args){
-            if(args[1]) {
-                return Meteor.setInterval(function () {
-                    Push.send({
-                        from: 'StudyLock',
-                        title: 'Quiz Time',
-                        text: 'Hey, guess what?! Its time for a question!',
-                        query: {
-                            userId: args[0]
-                        }
-                    })
-                }, 30 * 1000);
-            }else{
-                Meteor.clearInterval(args[2]);
-                User.pushIntervalId = null;
-            }
-        },
-
-        "NextQuestion.timer": function(args){
-            let qph = args[0];
-            let diff = Math.round(60 / qph);
-            diff = diff * 60;
-            console.log("inside question timer");
-            console.log(qph);
-            console.log((args[1] ? "true" : "false"));
-            if(!args[1]){
-                Meteor.clearInterval(args[2]);
-            }else{
-                console.log("Calling interval timer");
-            return Meteor.setInterval(function(){
-                //Time has been up lets start messing with them again
-                //First need to adjust profile answered value to false
-                //Update profile
-
-
-                console.log("Updating profile to start pestering");
-
-                Meteor.ClientCall.apply(args[3], 'updateProfile');
-
-
-            }, diff * 1000);
-            }
         }
     })
 
