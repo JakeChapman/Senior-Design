@@ -36,18 +36,27 @@ this.Landing = React.createClass({
 
   render() {
 
-    //this.setState({userLog: State.get('userLog')});
+      //this.setState({userLog: State.get('userLog')});
 
       let topCard;
 
-      if(typeof this.state.user === 'undefined'){
+      if (typeof this.props.profile === 'undefined') {
           topCard = <QuestionSetup/>
-      }else{
-          topCard = (typeof this.state.user.profile.qpd === 'undefined' ? <QuestionSetup/> :  <Settings profile={this.state.user.profile}/>);
+      } else {
+          topCard = (typeof this.props.profile.qpd === 'undefined' ? <QuestionSetup/> :
+              <Settings profile={this.props.profile }/>);
 
       }
 
+      console.log(this.props.logItems);
 
+      if (typeof this.props.profile === 'undefined') {
+          console.log("Rendering Loading Component");
+          return (
+              <Loading/>
+          )
+      } else {
+          console.log("Rendering Landing Component");
           return (
               <div className="container" id="log-wrapper">
 
@@ -69,5 +78,6 @@ this.Landing = React.createClass({
 
               </div>
           )
+      }
   }
 });

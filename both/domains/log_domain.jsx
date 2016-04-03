@@ -14,10 +14,10 @@ LogDomain = {
 
     getCorrectDay(offset){
         var now = new Date().getDate();
-
+        var curMonth = new Date().getMonth();
         if(now - offset <= 0){
             var remainder = Math.abs(now - offset);
-            if(now.getMonth() % 2 === 0){
+            if(curMonth % 2 === 0){
                 return 30 - remainder;
             }else{
                 return 31 - remainder;

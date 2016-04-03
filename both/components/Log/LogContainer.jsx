@@ -36,13 +36,14 @@ this.LogContainer = React.createClass({
 
         return {
             logReady: sub.ready(),
-            logItems: LogDomain.getQuestionLog()
+            logItems: LogDomain.getQuestionLog(),
+            profile: User.profile()
         };
     },
 
     render() {
         return (
-            <Landing logItems={this.data.logItems}/>
+            <Landing logItems={this.data.logItems} profile={this.data.profile}/>
         )
     }
 });

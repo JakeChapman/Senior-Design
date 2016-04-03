@@ -8,8 +8,6 @@
 // in case we ever switch dbs in the future
 
 User = {
-    pushIntervalId:  null,
-    nxtQuestionIntervalId: null,
     shouldUpdate: false,
     calledTimer: false,
     // returns user {Object} of current user or
@@ -191,22 +189,15 @@ User = {
 
     pushPester(args){
         console.log(args);
-        if(!args[1]) {
-            console.log("sending push");
-            return Meteor.setInterval(function () {
-                Push.send({
-                    from: 'StudyLock',
-                    title: 'Quiz Time',
-                    text: 'Hey, guess what?! Its time for a question!',
-                    query: {
-                        userId: args[0]
-                    }
-                })
-            }, 30 * 1000);
-        }else{
-            Meteor.clearInterval(args[2]);
-            User.pushIntervalId = null;
-        }
+        console.log("sending push");
+        Push.send({
+            from: 'StudyLock',
+            title: 'Quiz Time',
+            text: 'Hey, guess what?! Its time for a question!',
+            query: {
+                userId: args[0]
+            }
+        });
     },
 
     nextQuestionTimer(args){
